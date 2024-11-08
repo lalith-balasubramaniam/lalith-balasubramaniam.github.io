@@ -13,7 +13,7 @@ body {
 
 .about-container {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     padding: 40px;
 }
@@ -22,12 +22,13 @@ body {
     border-radius: 50%;
     width: 150px;
     height: 150px;
-    margin-right: 20px;
     object-fit: cover;
+    margin-right: 20px;
 }
 
 .about-text {
     max-width: 500px;
+    text-align: left;
 }
 
 .social-icons {
