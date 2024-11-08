@@ -93,6 +93,16 @@ body {
     font-weight: bold;
 }
 
+/* Remove underline from project titles */
+.tile a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.tile a:hover {
+    text-decoration: none;
+}
+
 .tile:hover {
     transform: translateY(-10px);
 }
