@@ -74,8 +74,10 @@ body {
     font-size: 28px;
     margin-top: 40px;
     font-weight: bold;
+    text-transform: uppercase;
 }
 
+/* Project Grid */
 .project-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -83,10 +85,12 @@ body {
     padding: 20px;
 }
 
+/* Project Tile */
 .tile {
     background-color: #40444b;
     border-radius: 10px;
     transition: transform 0.3s ease;
+    overflow: hidden;
 }
 
 .tile img {
@@ -97,26 +101,14 @@ body {
 .tile p {
     padding: 10px;
     font-weight: bold;
+    color: #ffffff;
+    text-align: center;
 }
 
-.tile:hover {
-    transform: translateY(-10px);
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .about-container {
-        flex-direction: column;
-    }
-
-    .profile-pic {
-        margin-bottom: 20px;
-    }
-}
-/* Remove underline, borders, and focus outlines from project links */
+/* Project Link Styles */
 .tile a {
     text-decoration: none; /* Remove underline */
-    color: #ffffff; /* Set text color to white */
+    color: #ffffff; /* Set link text color to white */
     outline: none;
     border: none;
 }
@@ -127,8 +119,26 @@ body {
 
 .tile a:hover,
 .tile a:focus {
-    text-decoration: none;
+    text-decoration: none; /* No underline on hover or focus */
     color: #ffffff; /* Keep color white on hover */
     outline: none;
     border: none;
+}
+
+/* Hover Effect on Tiles */
+.tile:hover {
+    transform: translateY(-10px);
+    cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-pic {
+        margin-bottom: 20px;
+    }
 }
