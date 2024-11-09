@@ -113,3 +113,22 @@ body {
         margin-bottom: 20px;
     }
 }
+/* Remove underline, borders, and focus outlines from project links */
+.tile a {
+    text-decoration: none; /* Remove underline */
+    color: #ffffff; /* Set text color to white */
+    outline: none;
+    border: none;
+}
+
+.tile a:visited {
+    color: #ffffff; /* Ensure visited links stay white */
+}
+
+.tile a:hover,
+.tile a:focus {
+    text-decoration: none;
+    color: #ffffff; /* Keep color white on hover */
+    outline: none;
+    border: none;
+}
